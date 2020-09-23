@@ -11,10 +11,11 @@ end
 def add_song(song)
     @songs << song
     song.artist = self
+    @@song_countn += 1 
   end
   
-  def songs 
-    @songs 
+  def self.song_count
+    @@song_count
   end 
 
 end 
